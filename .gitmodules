@@ -1,0 +1,6 @@
+[submodule "miri"]
+	path = miri
+	url = git@github.com:J00LZ/miri.git
+[submodule "ffi-checker-driver"]
+	path = ffi-checker-driver
+	url = git@github.com:J00LZ/ffi-checker-driver.git
