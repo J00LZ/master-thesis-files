@@ -48,6 +48,8 @@ Once that's done you'll need to either set an override (run `rustup toolchain ov
 
 Finally you'll need to set some options via the `MIRIFLAGS` environment variable, most notably the `-Zmiri-pbt-file=` variable should point to the `miripbt_format.json` file for the current project. Remember that if you use the build script it'll tell you what file to point to. 
 
+For the all the new added options, check the `miri/src/bin/miri.rs` changes between regular MIRI and MiriPBT. 
+
 ### Examples
 ```sh
 MIRIFLAGS="-Zmiri-pbt-file=/home/me/thesis-example/target/debug/build/thesis-example-ef9fdaf3545121f3/out/pbtgen/debug/build/thesis-example-ef9fdaf3545121f3/out/miripbt_format_3095207193173024579.json -Zmiri-pbt-stop-first" cargo miri run
